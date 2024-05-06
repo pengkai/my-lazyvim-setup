@@ -3,6 +3,7 @@
 -- Add any additional options here
 vim.opt.wrap = true
 vim.opt.relativenumber = false
+vim.opt.clipboard = "unnamedplus"
 
 vim.o.updatetime = 250
 vim.api.nvim_create_autocmd({ "CursorHold", "CursorHoldI" }, {
