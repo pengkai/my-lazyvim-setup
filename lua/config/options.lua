@@ -3,9 +3,11 @@
 -- Add any additional options here
 vim.opt.wrap = true
 vim.opt.relativenumber = false
-vim.opt.clipboard = "unnamedplus"
+if not vim.env.SSH_TTY then
+  vim.opt.clipboard = "unnamedplus"
+end
 
-vim.o.updatetime = 250
+vim.opt.updatetime = 250
 vim.api.nvim_create_autocmd({ "CursorHold", "CursorHoldI" }, {
   group = vim.api.nvim_create_augroup("float_diagnostic_cursor", { clear = true }),
   callback = function()
