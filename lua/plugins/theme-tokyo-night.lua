@@ -22,7 +22,8 @@ return {
           fg = "#000000",
         }
         hl.Search = {
-          bg = "#ffcc00",
+          --bg = "#ffcc00",
+          bg = "#a9ff68",
           fg = "#000000",
         }
       end,
