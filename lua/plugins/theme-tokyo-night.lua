@@ -4,7 +4,7 @@ return {
     lazy = false,
     priority = 1000,
     opts = {
-      style = "storm",
+      style = "moon",
       on_colors = function(colors)
         colors.comment = "#8590a0"
       end,

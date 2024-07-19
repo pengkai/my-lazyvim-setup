@@ -16,3 +16,7 @@ vim.keymap.set("n", "gT", ":BufferLineCyclePrev<CR>")
 
 -- 将 Ctrl+C 映射到复制（visual 模式下）
 vim.keymap.set("v", "<C-c>", '"+y', { noremap = true, silent = true })
+
+-- :q exit current buffer
+--vim.keymap.set("n", ":q<CR>", ":<CR>", { silent = true })
+--vim.keymap.set("n", ":tabonly<CR>", ":BufferLineCloseOthers<CR>", { noremap = true, silent = true })
